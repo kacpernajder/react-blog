@@ -2,18 +2,46 @@ import "./register.css"
 
 export default function Register() {
     return (
-        <div className="register">
-      <span className="registerTitle">Register</span>
-      <form className="registerForm">
-        <label>Username</label>
-        <input className="registerInput" type="text" placeholder="Enter your username..." />
-        <label>Email</label>
-        <input className="registerInput" type="text" placeholder="Enter your email..." />
-        <label>Password</label>
-        <input className="registerInput" type="password" placeholder="Enter your password..." />
-        <button className="registerButton">Register</button>
-      </form>
-        <button className="registerLoginButton">Login</button>
+      <div class="container">
+      <div class="row">
+          <div class="col-lg-3 col-md-2"></div>
+          <div class="col-lg-6 col-md-8 login-box">
+              <div class="col-lg-12 login-key">
+                  <i class="fa fa-key" aria-hidden="true"></i>
+              </div>
+              <div class="col-lg-12 login-title">
+                  ADMIN PANEL
+              </div>
+
+              <div class="col-lg-12 login-form">
+                  <div class="col-lg-12 login-form">
+                      <form>
+                          <div class="form-group">
+                              <label class="form-control-label">EMAIL</label>
+                              <input type="text" class="form-control"></input>
+                          </div>
+                          <div class="form-group">
+                              <label class="form-control-label">USERNAME</label>
+                              <input type="text" class="form-control"></input>
+                          </div>
+                          <div class="form-group">
+                              <label class="form-control-label">PASSWORD</label>
+                              <input type="password" class="form-control" i></input>
+                          </div>
+
+                          <div class="col-lg-12 loginbttm">
+                              <div class="col-lg-6 login-btm login-text">
+                              </div>
+                              <div class="col-lg-6 login-btm login-button">
+                                  <button type="submit" class="btn btn-outline-primary">REGISTER</button>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-2"></div>
+          </div>
+      </div>
     </div>
     )
 }
