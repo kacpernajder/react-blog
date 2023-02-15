@@ -2,32 +2,32 @@ import "./sidebar.css"
 
 export default function Sidebar() {
   return (
-    <div className="sidebar">
-        <div className="sidebarItem">
-            <span className="sidebarTitle">ABOUT ME</span>
-            <p>dsofjdspfisd  okfdsjdsjsdf odskfjdsf jdspfjdsfj ds pjdsijfpds
-                sdf kjdspkdsplfjdsf dsol;kfds plkdsmfds ffdsdsf/
-            </p>
-        </div>
-        <div className="sidebarItem">
-            <span className="sidebarTitle">CATEGORIES</span>
-            <ul className="sidebarList">
-                <li className="sidebarListItem">Life</li>
-                <li className="sidebarListItem">Music</li>
-                <li className="sidebarListItem">Style</li>
-                <li className="sidebarListItem">Sport</li>
-                <li className="sidebarListItem">Tech</li>
-            </ul>
-        </div>
-        <div className="sidebarItem">
-        <span className="sidebarTitle">FOLLOW US</span>
-        <div className="sidebarSocial">
-          <i className="sidebarIcon fab fa-facebook-square"></i>
-          <i className="sidebarIcon fab fa-instagram-square"></i>
-          <i className="sidebarIcon fab fa-pinterest-square"></i>
-          <i className="sidebarIcon fab fa-twitter-square"></i>
-        </div>
-      </div>
-    </div>
+          <>
+          <nav id="sidebarMenu" class="sidebar collapse d-lg-block sidebar collapse bg-white">
+          <div class="position-sticky">
+            <div class="list-group list-group-flush mx-3 mt-4">
+              <a
+                href="#"
+                class="list-group-item list-group-item-action py-2 ripple"
+                aria-current="true"
+              >
+                <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Life</span>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action py-2 ripple">
+                <i class="fas fa-chart-area fa-fw me-3"></i><span>Music</span>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action py-2 ripple"
+                ><i class="fas fa-lock fa-fw me-3"></i><span>Style</span></a
+              >
+              <a href="#" class="list-group-item list-group-item-action py-2 ripple"
+                ><i class="fas fa-chart-line fa-fw me-3"></i><span>Sport</span></a
+              >
+              <a href="#" class="list-group-item list-group-item-action py-2 ripple">
+                <i class="fas fa-chart-pie fa-fw me-3"></i><span>Technology</span>
+              </a>
+            </div>
+          </div>
+          </nav>
+    </>
   )
 }
